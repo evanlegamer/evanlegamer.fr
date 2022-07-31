@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js one-page-layout" data-mobile-classic-layout="true" data-classic-layout="false" data-prev-animation="16" data-next-animation="15" data-random-animation="false">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Le site evanlegamer est le site personnel de Evan barberousse, Créateur de Cloudby, Wazunix, ect.. Vous pouvez en connaitre plus sur ses activités :)">
+    <meta name="keywords" content="evanlegamer, developpeur, cloudby, mypushup, mynetup, evan, barberousse, evan barberousse, bougival">
+    <meta name="author" content="Evanlegamer">
+
+    <title>Evanlegamer</title>
+
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png" />
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery.magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery.uniform/uniform.default.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/align.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/768.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- INITIAL SCRIPTS -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-i18n/6.0.0/vue-i18n.js"></script>
+
+    <!--<script src="js/vue_custom.js"></script>-->
+    <link rel="stylesheet" href="css/jquery.fancyboxca96.css?v=2.1.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.fancybox.packca96.js?v=2.1.7"></script>
+    <!--[if lt IE 9]>
+            <script src="js/ie.js"></script>
+        <![endif]-->
+
+</head>
+
+
+
+<body>
+
+
+    <!-- PAGE -->
+    <div id="app" class="hfeed site">
+        <!-- HEADER -->
+        <header id="masthead" class="header" role="banner">
+
+            <a class="menu-toggle toggle-link"></a>
+
+            <h1 class="site-title mobile-title">Evanlegamer</h1>
+
+            <!-- header-wrap -->
+            <div class="header-wrap">
+
+                <img src="images/moi.jpg" alt="avatar">
+
+                <h1 class="site-title">Evanlegamer</h1>
+
+                <!-- NAV MENU -->
+                <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+                    <div class="nav-menu">
+                        <ul>
+
+                            <!-- InstanceBeginEditable name="Menu-Content" -->
+                            <li>
+                                <a href="index.html#home">
+                                    <i class="pe-7s-home"></i>{{ $t("menu.menu1") }}</a>
+                            </li>
+                            <li>
+                                <a href="index.html#about">
+                                    <i class="pe-7s-user"></i>{{ $t("menu.menu2") }}</a>
+                            </li>
+                            <li>
+                                <a href="index.html#resume">
+                                    <i class="pe-7s-id"></i>{{ $t("menu.menu3") }}</a>
+                            </li>
+                            <li>
+                                <a href="index.html#portfolio">
+                                    <i class="pe-7s-glasses"></i>{{ $t("menu.menu4") }}</a>
+                            </li>
+                            <li>
+                                <a href="index.html#blog">
+                                    <i class="pe-7s-notebook"></i>{{ $t("menu.menu5") }}</a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact">
+                                    <i class="pe-7s-call"></i>{{ $t("menu.menu6") }}</a>
+                            </li>
+
+
+                            <!-- InstanceEndEditable -->
+
+                        </ul>
+                    </div>
+                </nav>
+                <!-- NAV MENU -->
+
+
+
+                <!-- SEARCH -->
+                <div class="header-search">
+                    <form role="search" method="get" id="search-form" action="#">
+                        <input type="text" value="" name="s" id="search" placeholder="enter word">
+                        <input type="submit" id="search-submit" title="Search" value="→">
+                    </form>
+                </div>
+                <!-- SEARCH -->
+
+                <!-- header-bottom -->
+                <div class="header-bottom">
+                    <div style="display:flex;justify-content: center;">
+                        <div @click="$i18n.locale = 'fr'"><img width="28" height="28" src="images/french-flag.png"></div>
+                        <div style="margin-left:1rem;" @click="$i18n.locale = 'en'"><img width="28" height="28" src="images/us-flag.png"></div>
+                    </div>
+                    <!-- SOCIAL -->
+                    <ul class="social">
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/profile.php?id=100008705195839"></a>
+                        </li>
+                        <li>
+                            <a class="github" href="https://github.com/evanlegamer"></a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/in/evan-barberousse-5b9284147/"></a>
+                        </li>
+                    </ul>
+                    <!-- SOCIAL -->
+
+                    <!-- copy-text -->
+                    <div class="copy-text">
+                        <p>&copy; 2022 Evanlegamer</p>
+                    </div>
+                    <!-- copy-text -->
+
+                </div>
+                <!-- header-bottom -->
+
+
+            </div>
+            <!-- header-wrap -->
+
+        </header>
+        <!-- HEADER -->
+
+
+
+        <!-- .site-main -->
+        <div id="main" class="site-main">
+
+            <!-- PAGE : HOME -->
+            <section class="" style="background-image:url('images/site/cloudby.png'); height:100vw;">
+                <!-- .content -->
+                <div class="content">
+                    <!-- .layout-medium -->
+                    <div class="layout-medium" style="margin-top:20vw;border-radius: 10px; padding: 10px;background-color: black;opacity:80%;">
+
+                        <h2>Join Us Now !</h2>
+                        <h4>Cloudby is the first Cloud Based CMS that is totally free to start !</h4>
+                        <p><a href="https://cloudby.com" class="button">Go to the website</a></p>
+                    </div>
+                    <!-- .layout-medium -->
+                </div>
+                <!-- .content -->
+            </section>
+            <!-- PAGE : HOME -->
+
+
+        </div>
+        <!-- .site-main -->
+    </div>
+    <!-- PAGE -->
+
+    <!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
+    <div class="p-overlay"></div>
+    <div class="p-overlay"></div>
+
+    <!-- ALERT : used for contact form mail delivery alert -->
+    <div class="site-alert animated"></div>
+
+    <!-- InstanceEndEditable -->
+    <script>
+        $(document).ready(function() {
+            $(".various").fancybox({
+                maxWidth: 1000,
+                maxHeight: 750,
+                fitToView: true,
+                width: '100%',
+                height: '100%',
+                autoSize: true,
+                closeClick: true,
+                openEffect: 'bounce',
+                closeEffect: 'bounce'
+            });
+        });
+    </script>
+
+    <!-- SCRIPTS -->
+    <script src="js/vue_custom.js"></script>
+    <script src="js/jquery.address-1.5.min.js"></script>
+    <script src="js/nprogress/nprogress.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/typist.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.uniform/jquery.uniform.min.js"></script>
+    <script src="js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/socialstream.jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;key=AIzaSyBbbVrzZ_TpZL_cV2QcRydgCtVtNQLcRy0"></script>
+    <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html
